@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @include mobile {
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
@@ -17,7 +17,7 @@
 .navbar-logo {
   width: 80px;
 
-  @media (max-width: 768px) {
+  @include mobile {
     margin: 0 0 16px 16px;
   }
 }
@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @include mobile {
     flex-wrap: wrap;
   }
 }
@@ -34,7 +34,7 @@
 .navbar-item {
   height: 100%; /*why*/
 
-  @media (max-width: 768px) {
+  @include mobile {
     width: 50%;
     border: 1px solid rgba(255, 255, 255, 1);
   }
@@ -51,7 +51,7 @@
     opacity: 0.7;
   }
 
-  @media (max-width: 768px) {
+  @include mobile {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
